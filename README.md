@@ -11,13 +11,21 @@ In this repository there is a website that was created last year in PHP, now it 
 ## Here are some changes:
 
 Migrate the front to React;
+
 Add responsiveness;
+
 Make interaction;
+
 Organize the project structure;
+
 Modularization;
+
 Add routes;
+
 Add package manager;
+
 Deploy the front in Vercel;
+
 Deploy the back in Heroku;
 
 # Personal project developed in PHP.
