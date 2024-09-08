@@ -8,7 +8,7 @@ Hello!  Thank you for visiting this repository
 
 In this repository there is a website that was created last year in PHP, now it is in the refactoring period
 
-Here are some changes:
+## Here are some changes:
 
 Migrate the front to React;
 Add responsiveness;
