@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="iniciocss.css">
+    <script src="tl.js"></script>
+    <title>Turlines</title>
+</head>
+<body>
+        <div class="menu">
+
+                <img src="./logo4.png" class="logo">
+
+<!--DIVs Menu--><div class="menui"><div class="menui1"><div class="menu2">
+                        <p class="p1"><a href="#con" class="a1"><img src="./con.png" class="icon">  Central de Vendas &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="espaco">|</span></a></p>
+                        <!--<img src="./cadastro.png" class="icon1"> <input type="button" value="Inciar Sessão &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;" onclick="mostracadastrese()" class="cadastrar">-->                        
+                        <p class="p2"><a href="formTL.php" class="a1"><img src="./cadastro.png" class="icon">  Inciar Sessão &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="espaco">|</span></a></p>
+                        <p class="p3"><a href="#con" class="a1"><!--<span class="espaco">|</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;--><img src="./ajuda.png" class="icon">  Ajuda &nbsp;&nbsp;</a></p>
+                </div></div></div>
+
+        </div>
+
+        <div class="previa">
+
+                <div class="previa1">
+                        <button class="bu1"><a href="#con" class="a2">Passagens</a></button>   
+                        <button class="bu1"><a href="#con" class="a2">Hospedagens</a></button>   
+                        <button class="bu1"><a href="#con" class="a2">Transportes</a></button>   
+                        <button class="bu1"><a href="#con" class="a2">Pacotes</a></button>   
+                        <button class="bu1"><a href="#con" class="a2">Guias</a></button>
+                        <button class="bu1"><a href="#con" class="a2">Excursões</a></button>      
+                </div>
+
+        </div>
+
+<!--CONTAINER--><div class="busca">
+                        <div class="busca1">
+                        <p class="pv">Pacotes de viagens</p>
+
+<!--DIV botões brancos-->       <div class="pv1">
+                                        <button class="bu2"><a class="pv2">&nbsp;&nbsp;Até 50% de Economia&nbsp;&nbsp;</a></button>
+                                        <button class="bu2"><a class="pv2">&nbsp;&nbsp;All-Inclusive&nbsp;&nbsp;</a></button>
+                                        <button class="bu2"><a class="pv2">&nbsp;&nbsp;Promoções Nacionais&nbsp;&nbsp;</a></button>
+<!--Fecha DIV botoes-->         </div>
+
+<!--DIV pesquisar-->            <div class="form">
+                                        <form action="pacote.php" method="post" class="form1">
+
+<!--ORIGEM-->                                   <div class="form2">
+                                                        <label class="la1">ORIGEM</label>
+                                                        <img src="locali.png" class="locali"><input type="text" class="in1" placeholder="Insira sua cidade...">
+<!--Fecha ORIGEM-->                             </div>
+
+<!--DESTINO-->                                  <div class="form3">
+                                                        <label class="la2">DESTINO</label>
+                                                        <img src="locali.png" class="locali"><input type="text" class="in2" placeholder="Insira uma cidade...">
+<!--Fecha DESTINO-->                            </div>
+
+<!--DESTINO-->                                  <div class="form4">
+                                                        <label class="la3">IDA</label>
+                                                        <input type="date" class="in3">
+<!--Fecha DESTINO-->                            </div>
+
+<!--DESTINO-->                                  <div class="form5">
+                                                        <label class="la4">VOLTA</label>
+                                                        <input type="date" class="in4">
+<!--Fecha DESTINO-->                            </div>
+
+                                                        <button type="submit" class="sub1"><img src="lupa.png" class="lupa">Buscar</button>
+        
+                                        </form>
+                                <a class="limp">Clique para limpar os campos preenchidos.</a>
+<!--Fecha Form-->               </div>
+<!--Fecha Buscar-->     </div>
+               </div><!--Fecha Pesquisar-->
+
+<!--FIM DO BUSCAR-->
+                <div class="pacot">
+                        <img src="tela.png" class="tela">
+                </div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>
