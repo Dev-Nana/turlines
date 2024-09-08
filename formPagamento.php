@@ -25,10 +25,9 @@ $quantidade2 = $sql_valquery->num_rows;
         session_start();
     }
     
-// não tava dando certo, então eu desisti e só comentei no dia 07/09/24
-//     $_SESSION['id_pacotes'] = $pacotes['id_pacotes'];
-//     $_SESSION['id_hoteis'] = $pacotes['id_hoteis'];
-//     $_SESSION['id_guias'] = $pacotes['id_guias'];
+    $_SESSION['id_pacotes'] = $pacotes['id_pacotes'];
+    $_SESSION['id_hoteis'] = $pacotes['id_hoteis'];
+    $_SESSION['id_guias'] = $pacotes['id_guias'];
 
     $_SESSION['id_reservas'] = $reservas['id_reservas'];
     $_SESSION['checkin'] = $reservas['checkin'];

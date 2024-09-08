@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #tela {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 50%;
+        height: 100%;
+        background-color: lightblue;
+        transition: right 0.5s;
+        }
+
+        #tela.mostrar {
+        right: 0;
+        }
+    </style>
+</head>
+<body>
+    <button onclick="mostrarTela()">Mostrar</button>
+    <div id="tela">aaa</div>
+</body>
+</html><script>
+    function mostrarTela() {
+    var tela = document.getElementById("tela");
+    if (tela.classList.contains("mostrar")) {
+        tela.classList.remove("mostrar");
+    } else {
+        tela.classList.add("mostrar");
+    }
+    }
+</script>
