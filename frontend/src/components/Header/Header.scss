@@ -1,43 +1,34 @@
-@import '../../assets/styles/variables';
+@import "../../assets/styles/variables";
 .navbar__content {
-  padding: 30px 0;
+  padding: 20px 0;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  .container2{
-    display: flex;
-    background-color: $ciano !important;
-    
-  }
   .container {
-    padding: 0 1.2rem;
+    padding: 0;
     max-width: 100%;
     position: relative;
-    background-color: $white;
-    .show { //mostra a caixa do toggler
+    .show {
       display: flex;
-      background-color: $white;
+      align-items: stretch;
+      background-color: $ciano2;
       padding: 25px;
       top: 75px;
-      right: -10px;
-      width: clamp(275px, 100%, 40%);
+      right: -44px;
+      width: clamp(240px, 50vw, 40%);
       margin: 0 45px;
       position: absolute;
       .nav {
-        padding-right: 0 !important;
         display: flex;
-        width: 100%;
-        text-align: center;
-        align-items: center;
+        flex-wrap: nowrap;
+        padding-right: 0 !important;
         .link {
-          padding: 0 0 25px 0 !important;
-          color: $ciano2 !important;
+          color: $ciano2;
         }
       }
     }
     .toggler {
       border: none;
-      // : red !important;
       &:focus {
         box-shadow: none;
       }
@@ -49,16 +40,66 @@
     .collapse {
       flex-grow: 0;
       .nav {
+        background-color: $ciano;
+        border-radius: 15px 0 0 15px;
+        height: 40px;
         padding-right: 40px;
         align-items: center;
         .link {
-          padding: 8px 0;
-          padding-right: 50px;
-          font-weight: bolder;
+          border-right: solid $ciano2 1.5px;
+          height: 15px; //pra poder o linhazinha entre as coisas ficar menor
+          display: flex;
+          align-items: center;
+          padding: 0 40px;
+          font-size: 0.9rem;
+          font-weight: 500;
           color: $ciano2;
-          // fonte
+          .png {
+            width: 1.1rem;
+            padding-right: 0.2rem;
+          }
+        }
+      }
+      .nav-hidden {
+        display: none;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 991.5px) {
+  .navbar__content {
+    .container {
+      .collapse {
+        flex-direction: column;
+        flex-wrap: nowrap;
+        .nav {
+          margin: 0 !important;
+          background-color: transparent;
+          align-items: end;
+          border: 0;
+          height: 100%;
+          padding-right: 0;
+          .link {
+            padding: 20px 0 !important;
+            border: 0;
+            color: $white;
+            .png {
+              filter: invert(100%) saturate(0%) brightness(2);
+            }
+          }
+        }
+        .nav-hidden {
+          display: flex;
+          align-items: end;
+          .link {
+            color: $white;
+          }
         }
       }
     }
   }
+}
+@media screen and (min-width: 991.5px) {
+    
 }

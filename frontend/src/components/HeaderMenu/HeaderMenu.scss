@@ -1,0 +1,30 @@
+@import "../../assets/styles/variables";
+.menu__content {
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  .container {
+    padding: 0;
+    max-width: 100%;
+    position: relative;
+    .menu {
+      //pra ficar na ordem, esse menu tem que ir pra baixo do container
+      // display: flex; não pode colocar aqui se não ele não aparece
+      width: 100%;
+      .nav-exposed {
+        display: flex;
+        padding: 0px 20px;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+        font-size: 0.8rem;
+        font-weight: 500;
+        box-shadow: $ciano2 0 0 1px;
+        .link{
+          color: $ciano2;
+        }
+      }
+    }
+  }
+}
