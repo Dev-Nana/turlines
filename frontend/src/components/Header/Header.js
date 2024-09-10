@@ -1,7 +1,7 @@
 import React from 'react';
 
 import logo from '../../assets/images/logo.png'
-// import fone from '../../assets/images/fone.png';
+import fone from '../../assets/images/fone.png';
 
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
@@ -20,7 +20,7 @@ function Header() {
         <Navbar.Toggle className='toggler' aria-controls='basic-navbar-nav' />
         <Navbar.Collapse className='collapse' id='basic-navbar-nav'>
           <Nav className='nav me-auto'>
-            <Nav.Link href='#home' className='link'>Central de Vendas</Nav.Link>
+            <Nav.Link href='#home' className='link'><img src={logo} alt="Logo" className='logo'/>Central de Vendas</Nav.Link>
             <Nav.Link href='#link' className='link'>Iniciar Sessão</Nav.Link>
             <Nav.Link href='#link' className='link'>Entrar</Nav.Link>
             <Nav.Link href='#link' className='link'>Ajuda</Nav.Link>
