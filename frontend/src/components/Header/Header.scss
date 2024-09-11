@@ -1,6 +1,6 @@
 @import "../../assets/styles/variables";
 .navbar__content {
-  padding: 20px 0;
+  padding: 0;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -13,11 +13,12 @@
       align-items: stretch;
       background-color: $ciano2;
       padding: 25px;
-      top: 75px;
-      right: -44px;
-      width: clamp(240px, 50vw, 40%);
-      margin: 0 45px;
+      top: 0vh;
+      right: 0;
+      width: clamp(240px, 50vw, 30%);
+      margin: 0;
       position: absolute;
+      height: 100vh;
       .nav {
         display: flex;
         flex-wrap: nowrap;
@@ -29,11 +30,16 @@
     }
     .toggler {
       border: none;
+      padding-right: 20px;
+      background-color: $ciano;
+      border-radius: 15px 0 0 15px;
       &:focus {
         box-shadow: none;
       }
     }
     .logo {
+      padding-top: 15px;
+      padding-bottom: 15px;
       padding-left: clamp(0.2rem, 3vw, 2.5rem);
       width: clamp(10rem, 20vw, 14rem);
     }
@@ -47,7 +53,7 @@
         align-items: center;
         .link {
           border-right: solid $ciano2 1.5px;
-          height: 15px; //pra poder o linhazinha entre as coisas ficar menor
+          height: 15px;
           display: flex;
           align-items: center;
           padding: 0 40px;
@@ -73,10 +79,12 @@
       .collapse {
         flex-direction: column;
         flex-wrap: nowrap;
+        flex-direction: column-reverse;
         .nav {
           margin: 0 !important;
           background-color: transparent;
           align-items: end;
+          justify-content: end;
           border: 0;
           height: 100%;
           padding-right: 0;
@@ -92,6 +100,11 @@
         .nav-hidden {
           display: flex;
           align-items: end;
+          .toggler {
+            filter: invert(100%) brightness(2);
+            background-color: transparent;
+            padding: 10px 0;
+          }
           .link {
             color: $white;
           }
@@ -101,5 +114,4 @@
   }
 }
 @media screen and (min-width: 991.5px) {
-    
 }

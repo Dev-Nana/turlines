@@ -40,6 +40,7 @@ function Header() {
             </Nav.Link>
           </Nav>
           <Nav className='nav-hidden menu'>
+            <Navbar.Toggle className='toggler' aria-controls='basic-navbar-nav' />
             <Nav.Link href='#' className='link'>
               Pacotes
             </Nav.Link>
