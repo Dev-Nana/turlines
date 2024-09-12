@@ -1,14 +1,13 @@
 import React from 'react';
 
-import logo from '../../assets/images/logo.png'
-import fone from '../../assets/images/fone.png';
-import cadastro from '../../assets/images/cadastro.png';
-import ajuda from '../../assets/images/ajuda.png';
+import logo from '../../assets/images/image-logo.png'
+import fone from '../../assets/images/image-fone.png';
+import cadastro from '../../assets/images/image-cadastro.png';
+import ajuda from '../../assets/images/image-ajuda.png';
 
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import Button from 'react-bootstrap/Button';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 import './Header.scss';
