@@ -1,2 +1,2 @@
-import Header from './HeaderMenu';
+import HeaderMenu from './HeaderMenu';
 export default HeaderMenu;
